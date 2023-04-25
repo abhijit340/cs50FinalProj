@@ -1,0 +1,32 @@
+
+
+{% extends "layout.html" %}
+
+
+{% block title %}
+
+Registration Page
+{% endblock %}
+
+
+{% block main %}
+    <form action="/register" method="post">
+        <h4> Please fill out the form below</h4>
+        <div class="mb-3">
+            <input required id = "username" name="useranme" placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+            <input required id = "password" name="password" placeholder="Password" type="text">
+        </div>
+        <div class="mb-3">
+            <input required id = "password_rep" name="password_rep" placeholder="Retype Password" type="text">
+        </div>
+        <button type="submit"> Register </button>
+    </form>
+
+
+
+{% endblock %}
+
+    
+
